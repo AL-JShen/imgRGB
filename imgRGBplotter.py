@@ -26,7 +26,10 @@ for row in img:
 
 fig = plt.figure()
 ax = Axes3D(fig)
-ax.scatter(R[0], G[0], B[0])
+ax.scatter(R, G, B)
+ax.set_xlabel('Red')
+ax.set_ylabel('Green')
+ax.set_zlabel('Blue')
 plt.show()
 
 
